@@ -1,0 +1,15 @@
+title: About
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+            fields:
+                header.headshot:
+                  type: pagemediaselect
+                  label: Headshot Image
+                header.bgImg:
+                  type: pagemediaselect
+                  label: Background Image

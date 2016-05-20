@@ -1,0 +1,9 @@
+<header style="background: url({{ page.media[header.bgImg].url }}); background-attachment: fixed;">
+        <div>
+            <img src="{{ page.media[header.headshot].url }}">
+                {% if page.content %}
+                {{ page.content }}
+                {% endif %}
+            <a href="#" class="btn" target="_blank">Register Now</a>
+        </div>
+</header>
