@@ -1,4 +1,4 @@
-title: About
+title: Hero
 '@extends': default
 
 form:
@@ -13,3 +13,6 @@ form:
                 header.bgImg:
                   type: pagemediaselect
                   label: Background Image
+                header.url:
+                  type: text
+                  label: Button Link
