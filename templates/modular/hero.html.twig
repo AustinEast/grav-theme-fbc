@@ -1,6 +1,6 @@
-<header style="background: url({{ page.media[header.bgImg].url }}); background-attachment: fixed;">
+<header style="background: url({{ page.media[header.bgImg].url }}) no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; back">
         <div>
-            <img src="{{ page.media[header.headshot].url }}">
+            <img class="img-responsive" src="{{ page.media[header.headshot].cropResize(300,300).url }}">
                 {% if page.content %}
                 {{ page.content }}
                 {% endif %}

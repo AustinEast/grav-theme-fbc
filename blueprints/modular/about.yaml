@@ -7,15 +7,21 @@ form:
       fields:
         content:
             fields:
-                content:
-                    type: ignore
-                header.bio:
-                  type: text
-                  label: Bio
-                header.skills:
-                  type: text
-                  label: Skills
-                header.resume:
-                  type: text
-                  label: Resume Link
+                header.events:
+                  type: list
+                  name: events
+                  label: Events
+                  fields:
+                    order:
+                      by: default
+                      dir: asc
+                    .date:
+                      type: text
+                      label: Date
+                    .name:
+                      type: text
+                      label: Name
+                    .url:
+                      type: text
+                      label: Url
                     

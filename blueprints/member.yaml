@@ -1,0 +1,13 @@
+title: Member
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+            fields:
+                header.featured:
+                  type: pagemediaselect
+                  label: Headshot
+                  

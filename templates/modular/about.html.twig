@@ -1,18 +1,18 @@
 <section id="about">
         <div class="container">
             <div>
-                <h3>bio</h3>
-                <hr>
-                {% if page.header.bio %}
-                <p>{{ page.header.bio }}</p>
-                {% endif %}
+                {{ page.content }}
             </div>
             <div>
-                <h3>skills</h3>
+                <h1>Upcoming Events</h1>
                 <hr>
-                {% if page.header.skills %}
-                <p>{{ page.header.skills }}</p>
-                {% endif %}
+                {% for event in page.header.events %}
+                <a href="{{ event.url }}" target="_blank" class="newsItem">
+                    <h3>{{ event.name }}</h3>
+                    <p>{{ event.date }}</p>
+                </a>
+                <hr>
+                {% endfor %}
             </div>
         </div>
     </section>

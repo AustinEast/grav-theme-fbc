@@ -9,7 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% if header.description %}
-    {#Austin East is a developer and designer located in Orlando, Florida#}
     <meta name="description" content="{{ header.description }}">
     {% else %}
     <meta name="description" content="{{ site.description }}">
@@ -18,8 +17,6 @@
     <title>{% if header.title%}{{ header.title }} {% endif %}</title>
     {% block stylesheets %}
         {% do assets.add('theme://css/style.css', 101) %}
-        {# Custom CSS #}
-        {% do assets.add('theme://css/custom.css', 100) %}
         {# Web Fonts #}
         {% do assets.addCss('https://fonts.googleapis.com/css?family=Montserrat:400,700',99) %}
         {% do assets.addCss('https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,700italic', 98) %}
